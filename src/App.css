@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(248, 220, 220);
+  text-align: center;
+}
+
+header{
+  overflow: hidden;
+  border-bottom: 1px solid rgb(7, 7, 7);
+  background-color: white;
+  padding: 0 10px;
+}
+
+header img.pokedex {
+  float: left;
+}
+
+header img.pikachu {
+  float: right;
+  width: 150px;
+}
+
+nav{
+  overflow: hidden;
+  background-color: rgb(107, 102, 102);
+  padding: 0 10px;
+  border-bottom: 1px solid rgb(7, 7, 7);
+}
+
+nav a{
+  float: right;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-bottom: none;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 870px) {
+  nav a{
+    float: none;
+    text-align: left;
+  }
+  nav {
+    float: none;
+  }
+}
+
+.pok{
+  width: 50%;
+  margin:10% auto auto auto;
+}
+
+.loader {
+  border: 11px solid #ffffff;
+  border-top: 11px solid #f17379;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  margin: 10% auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
